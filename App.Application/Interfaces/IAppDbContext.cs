@@ -8,6 +8,7 @@ namespace App.Application.Interfaces
     public interface IAppDbContext
     {
         DbSet<Student> Students { get; set; }
+        DbSet<Department> Departments { get; set; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
